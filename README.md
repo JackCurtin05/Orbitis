@@ -5,8 +5,10 @@ An interactive real-time tracker for every object in Earth orbit — Starlink, s
 
 ---
 
-<!-- SCREENSHOT: Full app overview — 3D globe view with Starlink selected, sidebar visible, stats panel populated. Ideal size: 1280×800 or wider. -->
-![App Overview](screenshots/overview.png)
+<img width="3794" height="1816" alt="image" src="https://github.com/user-attachments/assets/abc2f04a-8c18-40bf-86cc-e31c318716e2" />
+<img width="2871" height="598" alt="image" src="https://github.com/user-attachments/assets/b334ef83-ffd3-4352-a95b-81ec20ada97b" />
+
+
 
 ---
 
@@ -26,17 +28,17 @@ An interactive real-time tracker for every object in Earth orbit — Starlink, s
 
 ## Screenshots
 
-<!-- SCREENSHOT: 3D globe with just Starlink enabled — shows the dense LEO shell of satellites evenly distributed. Good for showing scale. -->
-![Starlink Constellation](screenshots/starlink_globe.png)
+<img width="3831" height="1799" alt="image" src="https://github.com/user-attachments/assets/24baa84e-cbbd-49c4-8af1-9f85e2f1935a" />
 
-<!-- SCREENSHOT: Hover tooltip on a station dot (ISS or Tiangong) — should clearly show the station name, altitude, and coordinates in the tooltip. -->
-![Station Hover](screenshots/station_hover.png)
 
-<!-- SCREENSHOT: 2D flat map view with multiple categories enabled — shows ground tracks spread across the map. -->
-![2D Map View](screenshots/2d_map.png)
+<img width="3775" height="1671" alt="image" src="https://github.com/user-attachments/assets/40205ed9-b9e5-4e54-a4a2-ae410f9bedc4" />
 
-<!-- SCREENSHOT: Sidebar close-up showing the stats panel with numbers populated and the category checklist. -->
-![Stats Panel](screenshots/stats_panel.png)
+
+<img width="3807" height="1831" alt="image" src="https://github.com/user-attachments/assets/5796e7ac-5045-4f83-98bb-a57ae5f8d6cc" />
+
+
+<img width="910" height="436" alt="image" src="https://github.com/user-attachments/assets/a2fdd49b-5368-4ade-8199-94a2137515ec" />
+
 
 ---
 
