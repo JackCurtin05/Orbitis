@@ -25,30 +25,28 @@ from typing import Optional
 LOCAL_TLE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-# Celestrak TLE catalog endpoints — primary and fallback URLs per category.
-# Celestrak occasionally shuffles paths; trying multiple increases reliability.
+# Celestrak TLE catalog endpoints — new GP query API (legacy .txt files were
+# removed on 2024-12-24; all fetches now use the gp.php query endpoint).
+# Multiple URLs per category allow graceful fallback if one GROUP is unavailable.
 CATALOGS: dict[str, list[str]] = {
     "debris": [
-        "https://celestrak.org/pub/TLE/cosmos-2251-debris.txt",
-        "https://www.celestrak.com/pub/TLE/cosmos-2251-debris.txt",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=cosmos-2251-debris&FORMAT=tle",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium-33-debris&FORMAT=tle",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=fengyun-1c-debris&FORMAT=tle",
     ],
     "stations": [
-        "https://celestrak.org/pub/TLE/stations.txt",
-        "https://celestrak.org/pub/TLE/supplemental/iss.txt",
-        "https://celestrak.org/pub/TLE/supplemental/sgp4-v2-test.txt",
-        "https://www.celestrak.com/pub/TLE/stations.txt",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=tle",
+        "https://celestrak.org/NORAD/elements/supplemental/sup-gp.php?FILE=iss&FORMAT=tle",
     ],
     "starlink": [
-        "https://celestrak.org/pub/TLE/starlink.txt",
-        "https://www.celestrak.com/pub/TLE/starlink.txt",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=starlink&FORMAT=tle",
     ],
     "oneweb": [
-        "https://celestrak.org/pub/TLE/oneweb.txt",
-        "https://www.celestrak.com/pub/TLE/oneweb.txt",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=oneweb&FORMAT=tle",
     ],
     "iridium": [
-        "https://celestrak.org/pub/TLE/iridium.txt",
-        "https://www.celestrak.com/pub/TLE/iridium.txt",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium&FORMAT=tle",
+        "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium-NEXT&FORMAT=tle",
     ],
 }
 

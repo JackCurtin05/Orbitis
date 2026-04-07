@@ -12,8 +12,13 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Local TLE cache files
-*.txt
+# Local TLE cache files (manually downloaded from Celestrak)
+active.txt
+debris.txt
+stations.txt
+starlink.txt
+oneweb.txt
+iridium.txt
 
 # OS
 .DS_Store
